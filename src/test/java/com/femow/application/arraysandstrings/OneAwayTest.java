@@ -10,9 +10,11 @@ public class OneAwayTest {
     public void shouldReturnTrue() {
         String[][] inputs = {
             { "pale", "ple" }, // remove
-            { "pales", "pale" }, // remove
+            { "pales", "pale" },
+            { "aaa", "aa" },
             { "pale", "bale" }, // change
-            { "pale", "pales" } // add
+            { "pale", "pales" }, // add
+            { "aa", "aaa" }
         };
 
         for (String[] input : inputs) {
